@@ -19,7 +19,7 @@ app.configure(function(){
   app.use('/public/font', express.static(__dirname + '/public/font'));
   app.use('/public/img', express.static(__dirname + '/public/img'));
   app.use('/public/js', express.static(__dirname + '/public/js'));
-  app.use(express.favicon(__dirname + '/public/img/favicon.ico'));
+  //app.use(express.favicon(__dirname + '/public/img/favicon.ico'));
 
   // Compress everything else
   app.use(express.compress());
