@@ -55,6 +55,10 @@ app.get('^/$', function(req, res) {
   res.send(200, "Hello");
 });
 
+app.get('^/location$', function(req, res) {
+ res.render(__dirname + '/views/location'); 
+});
+
 
 // Main loop
 http.createServer(app).listen(app.get('port'), function() {
