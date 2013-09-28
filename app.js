@@ -48,6 +48,15 @@ app.configure(function(){
   http.agent = false;
 });
 
+
+
+// Routes
+app.get('^/$', function(req, res) {
+  console.log('Hello');
+  res.send(200, "Hello");
+});
+
+
 // Main loop
 http.createServer(app).listen(app.get('port'), function() {
   console.log("Express server listening on port " + app.get('port'));
