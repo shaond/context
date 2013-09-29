@@ -1,11 +1,10 @@
 var fs = require('fs');
 var path = require('path');
 var http = require('http');
+var yql = require('yql');
 var express = require('express');
 
 config = JSON.parse(fs.readFileSync('./config.json', 'utf-8'));
-
-app = express();
 
 app = express();
 
