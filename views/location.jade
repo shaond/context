@@ -4,5 +4,12 @@ html(lang='en')
     title Context
 
     body
-      form
-        
+      form(method='post', action='/getcontext')
+        input(type='hidden', name='_csrf', value=csrftoken)
+        select
+          option(value="AU") Australia
+          option(value="US") United States
+          option(value="UK") United Kingdom
+          option(value="SA") South Africa
+          option(value="KL") Malaysia
+        input(type='submit', value='Get context')
