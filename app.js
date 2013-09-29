@@ -60,6 +60,10 @@ app.get('^/location$', function(req, res) {
 });
 
 
+app.post('^/getcontext$', function(req, res) {
+  res.send(200, 'Getting context');
+});
+
 // Main loop
 http.createServer(app).listen(app.get('port'), function() {
   console.log("Express server listening on port " + app.get('port'));
